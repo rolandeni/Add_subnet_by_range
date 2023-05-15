@@ -1,0 +1,13 @@
+
+- name: Assign ip to server 
+  hosts: all
+  become: true
+  gather_facts: yes
+  tasks:
+    - name: Add IP subnet by range
+      tags: [Add_subnet]
+      shell: "for i in $(seq 0 255); do /sbin/ip addr add {{ item.subnet }}.${i}/32 dev {{ item.interface }}; done"
+      loop: "{{ subnets }}"
+
+
+

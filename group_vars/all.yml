@@ -1,0 +1,5 @@
+subnet_to_remove:  
+remove_from_interface: 
+new_ips:
+  - 192.168.1.10/24
+  - 192.168.1.11/24

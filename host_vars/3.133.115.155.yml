@@ -1,0 +1,8 @@
+subnets:
+  - { subnet: 99.99.99, interface: lo }
+  - { subnet: 22.22.22, interface: lo }
+
+server_id: c80d4ce7
+ip_address: 3.133.115.115
+telegraf_global_tags_network_type: 
+ssh_port: 1111
